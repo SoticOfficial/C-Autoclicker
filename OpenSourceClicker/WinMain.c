@@ -111,6 +111,8 @@ DWORD WINAPI ClickThread( LPVOID lParam )
 int wmain()
 {
 	SetConsoleTitle( L"" );
+	
+	printf( "Sparkly's Clicker")
 
 	CreateThread( NULL, 0, (LPTHREAD_START_ROUTINE)&HookThread, NULL, 0, 0 );
 	CreateThread( NULL, 0, (LPTHREAD_START_ROUTINE)&ClickThread, NULL, 0, 0 );
@@ -119,7 +121,14 @@ int wmain()
 	{
 		Sleep( 100 );
 		system( "cls" );
-		printf( "Status: %s\n", ( toggled ? "On" : "Off" ) );
+		printf( "Toggled: %s\n", ( toggled ? "On" : "Off" ) );
+		printf()
+		printf()
+		printf()	
+	        printf()
+		printf(  "                        Your UUID is 582e2244-6a7d-11e8-b564-b827eb444993" )
+			
+	
 	}
 
 	printf( "An error has ocurred while the program was running, as a result the program will be closed.\n" );
